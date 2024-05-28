@@ -1,0 +1,17 @@
+{
+    "name": "tech-crafters/obt-2024",
+    "description": "Projeto criado para a prova classificatória do DESAFIO DO APP da OBT 2024.",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Obt\\Iss\\": "Classes/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Leonardo8896",
+            "email": "pkafonso8896@gmail.com"
+        }
+    ],
+    "require": {}
+}

@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@import url("./header/header.css");
+@import url("./main/main.css");
+@import url("./footer/footer.css");
+@import url("./project_page/project.css");
+
+:root {
+  --primary_dark: #475569;
+  --secondary_dark: #334155;
+  --primary_gray: #94a3b8;
+  --secondary_gray: #a1a1aa99;
+  --wht: #ffffff;
+  --gre: #4ade80;
+  --red: #f87171;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--wht);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://s3-alpha-sig.figma.com/img/b5d5/455e/d7fafdf30be67d17e13daacf038323fe?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=K1H38PpEU-fQtnXaKelekgbLUVf5kYxZfqSakI3gaRMJrK-eBCDYXcSIJGDIQtIWEhhpu1jpSPSWPnmlBdvCFerT3nPbMOpOCFVSttGzFPOwVecVY83TZF1tMGEdJBN9jC0T1FUgH9nd9mtpZ~nfy-L0wCaFljQcvfg21PtV6cX3o59vo~2PegfU0~z3mubS899sILPAC4y5sgGY2Lp58zJpbk~-Ia9mxoOghyk09TvqbEObd8smT78YEG3HmUo2jl9VyBYE52GIrMGCphKPQpJkpcBYY2HwJwMNyFSIy3o42FaNaCNiH09xo6BkyZb87mldzOrvEPq-fQuyMh0gNg__");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: var(--wht);
+}
+
+a:hover {
+  transform: scale(1.01);
+}
+
+p {
+  margin-bottom: 0;
+}
+p + p {
+  text-indent: 1.5em;
+  margin-top: 0;
+}
