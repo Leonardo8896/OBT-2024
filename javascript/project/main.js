@@ -1,5 +1,5 @@
 import {openDescription} from './description.js'
-import {send} from './send.js'
+import {openName} from "./name.js";
 
 const state = document.querySelector('.state')
 state.addEventListener('click', ()=>{
@@ -60,6 +60,7 @@ add.addEventListener('keypress', (event)=>{
 const save = document.querySelector('#save')
 save.addEventListener('click', ()=>{
     let data = {};
+    data.name = document.querySelector('.title').innerText ?? document.querySelector('.name-input').value
     data.state = document.querySelector('.state').innerText
     data.country = document.querySelector('#country-select').value
     data.description = document.querySelector('.description').innerText ?? document.querySelector('.description-text').value
@@ -86,6 +87,8 @@ save.addEventListener('click', ()=>{
         statusCode: {
             200: function (response) {
                 console.log(response)
+                window.alert('O projeto foi salvo')
+                window.location.href = './?page=home'
             }
         },
         error: function (erro) {
@@ -96,4 +99,11 @@ save.addEventListener('click', ()=>{
         contentType: 'application/json',
         processData: false
     })
+})
+
+const name = document.querySelector('.title')
+console.log(name)
+name.addEventListener('click', ()=>{
+    openName(name)
+    console.log('Teste')
 })

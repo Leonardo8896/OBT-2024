@@ -142,7 +142,7 @@
   background-color: darkblue;
 }
 
-.description-text, .step-input{
+.description-text, .step-input, .name-input{
   overflow: hidden;
   resize: none;
   width: 100%;
@@ -161,3 +161,4 @@
   width: 80%;
   margin-top: 2vh;
 }
+

@@ -50,6 +50,7 @@
 <!--        <div class="flag"></div>-->
         <label for="country-select">Escolha um país:</label>
         <select id="country-select" class="flag-select">
+          <option value="" class="flag-option">Selecione um país</option>
           <option value="us" class="flag-option">Estados Unidos</option>
           <option value="ru" class="flag-option">Rússia</option>
           <option value="jp" class="flag-option">Japão</option>
