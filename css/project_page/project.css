@@ -126,13 +126,13 @@
 }
 
 #save {
-  font-size: 1.5vh;
+  font-size: 1rem;
   padding: 1.8%;
 }
 
 #finish {
   padding: 1%;
-  font-size: 1vh;
+  font-size: 0.5rem;
 }
 
 #add {
@@ -160,5 +160,9 @@
   padding: 1%;
   width: 80%;
   margin-top: 2vh;
+}
+
+input[type='checkbox'] {
+  margin-right: 1vw;
 }
 

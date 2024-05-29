@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Site da OBT</title>
     <link rel="stylesheet" href="../css/styles.css" />
+    <script src="../javascript/jquery-3.7.1.js"></script>
   </head>
   <body>
     <header>
@@ -24,173 +25,13 @@
         </svg>
         <input type="text" placeholder="Pesquisar" />
       </div>
+      <div id="header-div3">
+        <a href="./?page=project">Adicionar projeto</a>
+      </div>
     </header>
 
     <main>
       <div class="projects_container">
-        <a class="project" href="#">
-          <div class="cover"></div>
-          <p class="title">Densidade óssea e muscular em microgravidade</p>
-          <span class="state good">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="20px"
-              viewBox="0 -960 960 960"
-              width="20px"
-              fill="#fff"
-            >
-              <path
-                d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
-              />
-            </svg>
-            intacto
-          </span>
-        </a>
-
-        <a class="project" href="#">
-          <div class="cover"></div>
-          <p class="title">Materiais resistentes à radiação espacial</p>
-          <span class="state bad">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="20px"
-              viewBox="0 -960 960 960"
-              width="20px"
-              fill="#fff"
-            >
-              <path
-                d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
-              />
-            </svg>
-            avariado
-          </span>
-        </a>
-
-        <a class="project" href="#">
-          <div class="cover"></div>
-          <p class="title">Comportamento de fluidos em microgravidade</p>
-          <span class="state bad">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="20px"
-              viewBox="0 -960 960 960"
-              width="20px"
-              fill="#fff"
-            >
-              <path
-                d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
-              />
-            </svg>
-            avariado
-          </span>
-        </a>
-
-        <a class="project" href="#">
-          <div class="cover"></div>
-          <p class="title">Microrganismos em ambiente extremo</p>
-          <span class="state good">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="20px"
-              viewBox="0 -960 960 960"
-              width="20px"
-              fill="#fff"
-            >
-              <path
-                d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
-              />
-            </svg>
-            intacto
-          </span>
-        </a>
-
-        <a class="project" href="#">
-          <div class="cover"></div>
-          <p class="title">Crescimento de plantas em microgravidade</p>
-          <span class="state bad">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="20px"
-              viewBox="0 -960 960 960"
-              width="20px"
-              fill="#fff"
-            >
-              <path
-                d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
-              />
-            </svg>
-            avariado
-          </span>
-        </a>
-
-        <a class="project" href="#">
-          <div class="cover"></div>
-          <p class="title">Regeneração de tecidos em microgravidade</p>
-          <span class="state good">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="20px"
-              viewBox="0 -960 960 960"
-              width="20px"
-              fill="#fff"
-            >
-              <path
-                d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
-              />
-            </svg>
-            intacto
-          </span>
-        </a>
-
-        <a class="project" href="#">
-          <div class="cover"></div>
-          <p class="title">Comunicação por rádio no espaço</p>
-          <span class="state good">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="20px"
-              viewBox="0 -960 960 960"
-              width="20px"
-              fill="#fff"
-            >
-              <path
-                d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
-              />
-            </svg>
-            intacto
-          </span>
-        </a>
-
-        <a class="project" href="#">
-          <div class="cover"></div>
-          <p class="title">Cristalização de proteínas em microgravidade</p>
-          <span class="state good">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="20px"
-              viewBox="0 -960 960 960"
-              width="20px"
-              fill="#fff"
-            >
-              <path
-                d="m424-408-86-86q-11-11-28-11t-28 11q-11 11-11 28t11 28l114 114q12 12 28 12t28-12l226-226q11-11 11-28t-11-28q-11-11-28-11t-28 11L424-408Zm56 328q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
-              />
-            </svg>
-            intacto
-          </span>
-        </a>
-      </div>
-
-      <div class="navigation">
-        <span><</span>
-        <hr />
-        <span>1</span>
-        <hr />
-        <span>2</span>
-        <hr />
-        <span>3</span>
-        <hr />
-        <span>></span>
       </div>
     </main>
 
@@ -204,5 +45,6 @@
         </a>
       </p>
     </footer>
+    <script type="module" src="../javascript/home/main.js"></script>
   </body>
 </html>

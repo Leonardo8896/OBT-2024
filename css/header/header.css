@@ -1,6 +1,6 @@
 header {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr 1fr;
   padding: 16px 48px;
   background-color: var(--primary_dark);
 }
@@ -39,4 +39,20 @@ header .search_container input::placeholder {
 header .search_container input:focus {
   outline: 0;
   border-bottom: 1px solid var(--secondary_gray);
+}
+
+header a {
+  border-radius: 20px;
+  background-color: darkblue;
+  padding: 5%;
+  color: white;
+  font-size: 1rem;
+}
+
+header a:hover {
+  background-color: #000036;
+}
+
+#header-div3 {
+  align-content: center;
 }

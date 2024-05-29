@@ -13,22 +13,46 @@ class Project
         private array $steps = []
     ){}
 
+    public static function searchJSON(int $id): array
+    {
+        $data = json_decode(file_get_contents(DATA_BASE), true);
+
+        return $data[$id];
+    }
+
     public function save(): bool
     {
         $this->verifyName();
         $this->verifyDescription();
         $this->verifyPais();
+        $this->verifyStatus();
 
-        $json  = [
+        $newData = [
             'name' => $this->name,
             'description' => $this->description,
             'pais' => $this->pais,
             'status' => $this->status,
-            'reparo' => json_encode($this->steps)
+            'reparo' => $this->steps
         ];
-        $result = file_put_contents(DATA_BASE, json_encode($json));
 
-        return $result;
+        $existingData = [];
+        $existis = false;
+        $fileContent = file_get_contents(DATA_BASE);
+        $existingData = json_decode($fileContent, true) ?: [];
+        foreach ($existingData as $index => $project) {
+            if ($project['name'] == $newData['name'] || $project['description'] == $newData['description']){
+                $existingData[$index] = $newData;
+                $existis = true;
+            }
+        }
+
+        if (!$existis) {
+            $existingData[] = $newData;
+        }
+
+        $result = file_put_contents(DATA_BASE, json_encode($existingData, JSON_PRETTY_PRINT));
+
+        return $result !== false;
     }
 
     private function verifyName(): void
@@ -49,6 +73,15 @@ class Project
     {
         if($this->pais == '') {
             throw new ProjectException('country', 'Selecione um país');
+        }
+    }
+
+    private function verifyStatus(): void
+    {
+        foreach ($this->steps as $step) {
+            if(!$step['check'] && $this->status == 'intacto') {
+                throw new ProjectException('status', 'Um projeto com reparos a serem feitos não pode estar intacto');
+            }
         }
     }
 }

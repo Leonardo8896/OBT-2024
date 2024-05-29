@@ -1,1 +1,97 @@
-{"name":"Materiais resistentes \u00e0 radia\u00e7\u00e3o espacial","description":"Este experimento tem como objetivo analisar os efeitos da microgravidade na densidade \u00f3ssea e muscular dos astronautas que ficam por longos per\u00edodos a bordo da ISS. A pesquisa busca entender como a falta de gravidade afeta o corpo humano e quais s\u00e3o as consequ\u00eancias a longo prazo.","pais":"br","status":"intacto","reparo":"[{\"check\":false,\"text\":\"Avaliar o dano ao experimento e determinar o que foi afetado\"}]"}
+[
+    {
+        "name": "Densidade óssea e muscular em microgravidade",
+        "description": "Análise dos efeitos da microgravidade na densidade óssea e muscular.",
+        "pais": "Estados Unidos",
+        "status": "intacto",
+        "reparo": []
+    },
+    {
+        "name": "Materiais resistentes à radiação espacial",
+        "description": "Estudo sobre materiais que podem suportar radiação espacial.",
+        "pais": "Japão",
+        "status": "danificado",
+        "reparo": [
+            {
+                "check": false,
+                "text": "Avaliar o dano ao experimento e determinar o que foi afetado"
+            },
+            {
+                "check": false,
+                "text": "Implementar medidas corretivas para minimizar os danos"
+            },
+            {
+                "check": false,
+                "text": "Documentar todas as etapas de reparo e resultados"
+            }
+        ]
+    },
+    {
+        "name": "Comportamento de fluidos em microgravidade",
+        "description": "Observação do comportamento de diferentes fluidos em condições de microgravidade.",
+        "pais": "Rússia",
+        "status": "danificado",
+        "reparo": [
+            {
+                "check": false,
+                "text": "Avaliar o dano ao experimento e determinar o que foi afetado"
+            },
+            {
+                "check": false,
+                "text": "Substituir componentes danificados"
+            },
+            {
+                "check": false,
+                "text": "Testar novamente o comportamento dos fluidos após os reparos"
+            }
+        ]
+    },
+    {
+        "name": "Microrganismos em ambiente extremo",
+        "description": "Investigação de microrganismos e suas reações em ambientes extremos.",
+        "pais": "Canadá",
+        "status": "intacto",
+        "reparo": []
+    },
+    {
+        "name": "Crescimento de plantas em microgravidade",
+        "description": "Estudo do crescimento de plantas em condições de microgravidade.",
+        "pais": "Brasil",
+        "status": "danificado",
+        "reparo": [
+            {
+                "check": false,
+                "text": "Avaliar o dano ao experimento e determinar o que foi afetado"
+            },
+            {
+                "check": false,
+                "text": "Reparar o sistema de iluminação das plantas"
+            },
+            {
+                "check": false,
+                "text": "Monitorar o crescimento das plantas após os reparos"
+            }
+        ]
+    },
+    {
+        "name": "Regeneração de tecidos em microgravidade",
+        "description": "Pesquisa sobre a regeneração de tecidos em ambiente de microgravidade.",
+        "pais": "Alemanha",
+        "status": "intacto",
+        "reparo": []
+    },
+    {
+        "name": "Comunicação por rádio no espaço",
+        "description": "Análise da eficácia das comunicações por rádio no espaço.",
+        "pais": "Reino Unido",
+        "status": "intacto",
+        "reparo": []
+    },
+    {
+        "name": "Cristalização de proteínas em microgravidade",
+        "description": "Estudo da cristalização de proteínas em condições de microgravidade.",
+        "pais": "França",
+        "status": "intacto",
+        "reparo": []
+    }
+]

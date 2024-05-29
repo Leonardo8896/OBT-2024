@@ -1,5 +1,6 @@
 import {openDescription} from './description.js'
 import {openName} from "./name.js";
+import {setName, setPais, setStatus, setReparo, setDescription} from "./setProperties.js";
 
 const state = document.querySelector('.state')
 state.addEventListener('click', ()=>{
@@ -60,10 +61,10 @@ add.addEventListener('keypress', (event)=>{
 const save = document.querySelector('#save')
 save.addEventListener('click', ()=>{
     let data = {};
-    data.name = document.querySelector('.title').innerText ?? document.querySelector('.name-input').value
+    data.name = document.querySelector('.title') ? document.querySelector('.title').innerText:document.querySelector('.name-input').value
     data.state = document.querySelector('.state').innerText
     data.country = document.querySelector('#country-select').value
-    data.description = document.querySelector('.description').innerText ?? document.querySelector('.description-text').value
+    data.description = document.querySelector('.description') ? document.querySelector('.description').innerText:document.querySelector('.description-text').value
 
     data.steps = []
     let steps_divs = document.querySelectorAll('.step')
@@ -92,12 +93,14 @@ save.addEventListener('click', ()=>{
             }
         },
         error: function (erro) {
-            console.log("Erro " + erro.status + ": " + erro.statusText)
+            // console.log("Erro " + erro.status + ": " + erro.statusText)
             console.log(erro)
+            window.alert(erro.responseJSON.message)
         },
         cache: false,
         contentType: 'application/json',
-        processData: false
+        processData: false,
+        dataType: 'json'
     })
 })
 
@@ -105,5 +108,30 @@ const name = document.querySelector('.title')
 console.log(name)
 name.addEventListener('click', ()=>{
     openName(name)
-    console.log('Teste')
 })
+
+let querystring = window.location.search
+console.log(querystring)
+if (querystring.includes('id')) {
+    console.log('teste')
+    $.ajax({
+        url: './' + window.location.search + '&for=get-project',
+        method: 'GET',
+        statusCode: {
+            200: function (response) {
+                setName(response.name)
+                setDescription(response.description)
+                setPais(response.pais)
+                setStatus(response.status)
+                setReparo(response.reparo)
+            }
+        },
+        error: function (erro) {
+            // console.log("Erro " + erro.status + ": " + erro.statusText)
+            console.log(erro)
+        },
+        cache: false,
+        processData: false,
+        dataType: 'json'
+    })
+}

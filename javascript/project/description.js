@@ -8,7 +8,9 @@ export function openDescription(description) {
     finish.classList.add('edit-description')
     finish.innerText = "Fechar descrição"
     finish.addEventListener('click', ()=>{
-        closeDescription(textArea, finish)
+        if (textArea.value) {
+            closeDescription(textArea, finish)
+        }
     })
 
     description.parentElement.replaceChild(textArea, description)

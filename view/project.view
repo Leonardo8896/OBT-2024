@@ -31,7 +31,7 @@
     <main class="project-main">
       <div class="cover"></div>
       <div class="right-side">
-        <p class="title">Materiais resistentes à radiação espacial</p>
+        <p class="title">Clique aqui para editar o título e aperte enter para sair da edição...</p>
         <span class="state good">
 <!--          <svg-->
 <!--            xmlns="http://www.w3.org/2000/svg"-->
@@ -51,40 +51,28 @@
         <label for="country-select">Escolha um país:</label>
         <select id="country-select" class="flag-select">
           <option value="" class="flag-option">Selecione um país</option>
-          <option value="us" class="flag-option">Estados Unidos</option>
-          <option value="ru" class="flag-option">Rússia</option>
-          <option value="jp" class="flag-option">Japão</option>
-          <option value="ca" class="flag-option">Canadá</option>
-          <option value="br" class="flag-option">Brasil</option>
-          <option value="fr" class="flag-option">França</option>
-          <option value="de" class="flag-option">Alemanha</option>
-          <option value="it" class="flag-option">Itália</option>
-          <option value="es" class="flag-option">Espanha</option>
+          <option value="Estados Unidos" class="flag-option">Estados Unidos</option>
+          <option value="Rússia" class="flag-option">Rússia</option>
+          <option value="Japão" class="flag-option">Japão</option>
+          <option value="Canadá" class="flag-option">Canadá</option>
+          <option value="Brasil" class="flag-option">Brasil</option>
+          <option value="França" class="flag-option">França</option>
+          <option value="Alemanha" class="flag-option">Alemanha</option>
+          <option value="Itália" class="flag-option">Itália</option>
+          <option value="Espanha" class="flag-option">Espanha</option>
         </select>
 
         <hr />
 
         <p class="description-title">Descrição</p>
         <p class="description">
-          Este experimento tem como objetivo analisar os efeitos da
-          microgravidade na densidade óssea e muscular dos astronautas que ficam
-          por longos períodos a bordo da ISS. A pesquisa busca entender como a
-          falta de gravidade afeta o corpo humano e quais são as consequências a
-          longo prazo.
+          Clique aqui para editar a descrição...
         </p>
 
         <hr />
 
         <div class="TODO-repair" id="steps">
           <p>Passo a passo para o reparo</p>
-
-          <div class="step">
-            <input type="checkbox" name="step1" id="step1" />
-            <label for="step1">
-              Avaliar o dano ao experimento e determinar o que foi afetado
-            </label>
-          </div>
-          <br>
           <textarea placeholder="Adicionar mais um passo..." id="add-step"></textarea>
         </div>
 
